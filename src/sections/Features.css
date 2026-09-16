@@ -61,10 +61,18 @@
   margin-bottom: 2rem;
   background: var(--bg-raised);
   border: 1px solid var(--border-color);
+  color: var(--text-secondary);
 }
-.icon-wrap--primary { color: var(--accent-primary); }
-.icon-wrap--violet { color: var(--accent-violet); }
-.icon-wrap--cyan { color: var(--accent-cyan); }
+
+/* Lightsaber highlight for the dominant feature only */
+.icon-wrap--primary { 
+  color: var(--accent-core);
+  box-shadow: inset 0 0 12px var(--accent-deep-glow);
+  border-color: var(--accent-primary-hover);
+}
+
+.icon-wrap--violet { color: var(--text-secondary); }
+.icon-wrap--cyan { color: var(--text-secondary); }
 
 .feature-card__label {
   font-size: 0.75rem;

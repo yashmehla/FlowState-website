@@ -5,37 +5,8 @@
   align-items: center;
   padding-top: 5rem;
   overflow: hidden;
-  background-color: var(--bg-void);
-}
+  background: transparent;
 
-/* Atmospheric Glow */
-.hero__glow--primary {
-  position: absolute;
-  top: -20vh;
-  left: 10vw;
-  width: 80vw;
-  height: 80vh;
-  border-radius: 50%;
-  filter: blur(140px);
-  background: radial-gradient(circle, var(--moonlight-glow), transparent 70%);
-  pointer-events: none;
-  opacity: 0.8;
-  z-index: 0;
-}
-
-.hero__glow--secondary {
-  position: absolute;
-  bottom: 0;
-  right: 10vw;
-  width: 60vw;
-  height: 60vh;
-  border-radius: 50%;
-  filter: blur(120px);
-  background: radial-gradient(circle, var(--night-violet-glow), transparent 70%);
-  pointer-events: none;
-  opacity: 0.7;
-  z-index: 0;
-}
 
 /* Layout */
 .hero__inner {
@@ -77,7 +48,7 @@
 }
 
 .hero__headline-secondary {
-  color: var(--text-primary);
+  color: var(--starlight-warm);
 }
 
 .hero__subheadline {

@@ -2,59 +2,73 @@
 
 /* ─── Design Tokens ──────────────────────────────────────── */
 :root {
-  /* BACKGROUND */
-  --bg-void: #05070B;
-  --bg-midnight: #080C13;
-  --bg-deep: #0C111A;
-  --bg-panel: #101721;
-  --bg-raised: #151D29;
+  /* SKY / BACKGROUND */
+  --bg-void: #000000;
+  --bg-black: #020202;
+  --bg-deep: #050505;
+  --bg-panel: #080808;
+  --bg-raised: #0C0C0C;
 
   /* BORDERS */
-  --border-dim: #171F2A;
-  --border-default: #222C39;
-  --border-strong: #313D4D;
-  --border-color: var(--border-default); /* Alias for existing layout classes */
-  --border-bright: var(--border-strong); /* Alias */
+  --border-ghost: #15181C;
+  --border-subtle: #20242A;
+  --border-visible: #2B3037;
+  --border-color: var(--border-subtle);
+  --border-bright: var(--border-visible);
+  --border-dim: var(--border-ghost);
 
   /* TEXT */
-  --text-primary: #F4F5F7;
-  --text-secondary: #B4BAC5;
-  --text-muted: #727B89;
+  --star-white: #FFFFFF;
+  --text-primary: #F4F4F1;
+  --text-secondary: #B8BAB8;
+  --text-muted: #70747A;
+  --starlight: var(--star-white);
 
-  /* MOONLIGHT */
-  --moonlight: #9AAFD3;
-  --moonlight-bright: #C0D0EA;
-  --moonlight-glow: rgba(154, 175, 211, 0.12);
+  /* SILVER / STAR DUST */
+  --silver: #D4D6D3;
+  --silver-dim: #979B9A;
 
-  /* FAINT NIGHT VIOLET */
-  --night-violet: #8D8AB6;
-  --night-violet-glow: rgba(141, 138, 182, 0.07);
+  /* WARM STARLIGHT */
+  --starlight-warm: #ECEAE3;
 
-  /* STARLIGHT */
-  --starlight: #FFFFFF;
+  /* GLOWS */
+  --accent-core-glow: rgba(255, 255, 255, 0.08);
+  --accent-deep-glow: rgba(255, 255, 255, 0.03);
+  --saber-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
 
-  /* SEMANTIC */
-  --success: #91B9A0;
-  --warning: #D3A66E;
-  --danger: #D77E88;
+  /* SEMANTIC COLORS ONLY */
+  --success: #8EA997;
+  --warning: #C8A56B;
+  --danger: #C96F78;
 
-  /* Backward Compatibility Aliases for components */
-  --accent-primary: var(--moonlight);
-  --accent-primary-hover: var(--moonlight-bright);
-  --accent-primary-glow: var(--moonlight-glow);
-  --accent-violet: var(--night-violet);
-  --accent-violet-glow: var(--night-violet-glow);
-  --accent-cyan: var(--moonlight-bright);
-  --accent-green: var(--accent-primary);
-  --accent-green-glow: var(--accent-primary-glow);
+  /* Backward Compatibility Aliases */
+  --bg-dark: var(--bg-black);
+  --bg-darker: var(--bg-void);
+  --accent-primary: var(--star-white);
+  --accent-primary-hover: var(--starlight-warm);
+  --accent-primary-bright: var(--star-white);
+  --accent-core: var(--star-white);
+  --accent-deep: var(--silver-dim);
+  
+  --moonlight: var(--silver);
+  --moonlight-bright: var(--star-white);
+  --moonlight-glow: var(--accent-deep-glow);
+  --night-violet: var(--silver-dim);
+  --night-violet-glow: rgba(255,255,255,0.02);
+  
+  --accent-violet: var(--silver);
+  --accent-violet-glow: var(--accent-deep-glow);
+  --accent-cyan: var(--star-white);
+  --accent-green: var(--star-white);
+  --accent-green-glow: var(--accent-deep-glow);
   --accent-red: var(--danger);
   --accent-orange: var(--warning);
-  --accent-blue: var(--accent-cyan);
+  --accent-blue: var(--star-white);
 
   /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono:  'JetBrains Mono', 'Courier New', monospace;
 
   /* Layout */
   --max-width: 1200px;
@@ -174,14 +188,16 @@ section {
 }
 
 .btn-primary {
-  background-color: var(--starlight);
-  color: var(--bg-void);
-  border: 1px solid var(--starlight);
-  box-shadow: 0 0 0 0 var(--moonlight-glow);
+  background-color: var(--text-primary);
+  color: var(--bg-black);
+  border: 1px solid var(--text-primary);
+  box-shadow: 0 0 0 0 transparent;
 }
 .btn-primary:hover {
-  background-color: #E2E4E9;
-  box-shadow: 0 0 40px 8px var(--moonlight-glow);
+  background-color: var(--star-white);
+  border-color: var(--star-white);
+  box-shadow: 0 0 20px rgba(255,255,255,0.08);
+  color: var(--bg-void);
   transform: translateY(-1px);
 }
 
@@ -254,5 +270,13 @@ section {
   }
   section {
     padding: var(--section-padding);
+  }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .global-star {
+    animation: none;
   }
 }

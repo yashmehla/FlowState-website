@@ -32,7 +32,7 @@
 .pomo-tab:last-child { border-right: none; }
 .pomo-tab--active {
   background: var(--bg-raised);
-  color: var(--accent-green);
+  color: var(--star-white);
 }
 
 /* Ring */
@@ -70,7 +70,7 @@
 
 .pomo-mode {
   font-size: 0.55rem;
-  color: var(--accent-green);
+  color: var(--star-white);
   letter-spacing: 0.15em;
 }
 
@@ -96,12 +96,12 @@
 }
 
 .pomo-btn--primary {
-  background: var(--accent-green);
-  color: #fff;
+  background: var(--text-primary);
+  color: var(--bg-void);
 }
 .pomo-btn--primary:hover {
-  background: #6a9e72;
-  box-shadow: 0 0 20px rgba(92,138,99,0.3);
+  background: var(--star-white);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
 }
 
 .pomo-btn--ghost {

@@ -114,7 +114,7 @@
 }
 .badge--red    { color: #d94b4b; border-color: rgba(217,75,75,0.3); }
 .badge--orange { color: #d98e4b; border-color: rgba(217,142,75,0.3); }
-.badge--green  { color: var(--accent-green); border-color: rgba(92,138,99,0.3); }
+.badge--green  { color: var(--star-white); border-color: rgba(255, 255, 255, 0.3); }
 
 .mock-time {
   font-family: var(--font-mono);

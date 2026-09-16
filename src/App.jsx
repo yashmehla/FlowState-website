@@ -7,6 +7,7 @@ import Features from './sections/Features.jsx';
 import Philosophy from './sections/Philosophy.jsx';
 import Showcase from './sections/Showcase.jsx';
 import Download from './sections/Download.jsx';
+import Starfield from './components/Starfield.jsx';
 
 function useScrollReveal() {
   useEffect(() => {
@@ -74,6 +75,7 @@ export default function App() {
     <>
       <div className="grain-overlay" aria-hidden="true" />
       <CursorAtmosphere />
+      <Starfield />
 
       <Navbar />
 

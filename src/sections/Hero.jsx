@@ -26,10 +26,6 @@ export default function Hero() {
 
   return (
     <section className="hero" id="hero" aria-label="Hero">
-      {/* Soft atmospheric gradients */}
-      <div className="hero__glow hero__glow--primary" aria-hidden="true" />
-      <div className="hero__glow hero__glow--secondary" aria-hidden="true" />
-
       <div className="container hero__inner">
         <div className="hero__copy">
           <p className="hero__eyebrow font-mono reveal">
@@ -52,7 +48,7 @@ export default function Hero() {
               className="btn btn-primary hero__cta-download"
               aria-label="Download FlowState"
             >
-              <DownloadIcon size={16} strokeWidth={2} className="cta-icon" />
+              <span className="cta-icon">✦</span>
               <span className="cta-text">Download FlowState</span>
             </a>
             <a

@@ -1,6 +1,6 @@
 .philosophy {
   padding: var(--section-padding);
-  background-color: var(--bg-dark);
+  background-color: transparent;
   text-align: center;
   border-top: 1px solid var(--border-dim);
   border-bottom: 1px solid var(--border-dim);

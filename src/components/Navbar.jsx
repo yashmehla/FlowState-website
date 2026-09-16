@@ -16,7 +16,6 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Features', href: '#features' },
     { label: 'Showcase', href: '#showcase' },
-    { label: 'Download', href: '#download' },
   ];
 
   return (
@@ -24,7 +23,8 @@ export default function Navbar() {
       <div className="navbar__inner container">
         {/* Logo */}
         <a href="/" className="navbar__logo" aria-label="FlowState home">
-          Flow<span className="navbar__logo-accent">State.</span>
+          <img src="/logo.png" alt="FlowState Icon" className="navbar__logo-icon" />
+          <span className="navbar__logo-text">Flow<span className="navbar__logo-accent">State.</span></span>
         </a>
 
         {/* Desktop nav links */}
@@ -42,8 +42,7 @@ export default function Navbar() {
           className="btn btn-primary navbar__cta"
           aria-label="Download FlowState for Windows"
         >
-          <Download size={15} strokeWidth={2} />
-          Download
+          ✦ Download
         </a>
 
         {/* Mobile hamburger */}
@@ -75,8 +74,7 @@ export default function Navbar() {
             className="btn btn-primary"
             style={{ marginTop: '1rem', justifyContent: 'center' }}
           >
-            <Download size={15} strokeWidth={2} />
-            Download for Windows
+            ✦ Download for Windows
           </a>
         </div>
       )}

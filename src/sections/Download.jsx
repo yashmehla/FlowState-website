@@ -69,10 +69,10 @@ export default function Download() {
                 onMouseLeave={() => setHover(false)}
                 aria-label="Download FlowState"
               >
-                <span className="cta-text">
+                <span className="cta-icon">✦</span>
+                <span className="cta-text" style={{ marginLeft: '8px' }}>
                   {hover ? 'Enter FlowState' : 'Download FlowState'}
                 </span>
-                <ArrowRight size={16} strokeWidth={2} className="cta-icon-arrow" />
               </a>
 
               {count !== null && (
