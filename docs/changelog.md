@@ -5,10 +5,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
-## [Unreleased]
+## [1.0.0] - 2026-09-16
 
 ### Added
-- **Design Overhaul:** Completely reimagined the visual identity to align with the "flow" philosophy. Added subtle cursor-reactive atmospheric glow (`requestAnimationFrame` + `mix-blend-mode`), smoother eased CSS transitions, and deep dark theme refinements (`#070809` background).
+- **Midnight Visual Formula:** Completely reimagined the visual identity to align with the "flow" philosophy. Shifted to a cinematic, calm "Midnight" aesthetic featuring `Void` (`#05070B`) backgrounds, `Starlight` (White) hierarchy, and `Moonlight` (`#9AAFD3`) / `Night-Violet` (`#8D8AB6`) atmospheric lighting. Added subtle cursor-reactive glow (`requestAnimationFrame` + `mix-blend-mode`), and smoother eased CSS transitions.
 - **Philosophy Section:** Added a new manifesto section communicating the local-first, zero-cloud architecture with a visual data flow diagram.
 - **Accessibility & Motion System:** Added robust `prefers-reduced-motion` handling to selectively disable atmospheric cursor effects and scroll-reveals for sensitive users.
 - **SEO & Structured Data:** Overhauled `index.html` with full Open Graph tags, Twitter cards, canonical link, and JSON-LD `SoftwareApplication` structured data. Added `robots.txt` and `sitemap.xml`.

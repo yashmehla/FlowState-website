@@ -176,11 +176,12 @@ flowstate-website/
 
 ## Styling Conventions
 
-- Each component owns its own `.css` file imported directly into its `.jsx` — no cross-component style imports.
-- Hover transforms: `translateY(-1px)` or `translateY(-2px)` maximum — never jarring.
-- Accent colours applied at `0.06–0.18` opacity for fills, `0.3` for borders, full strength for icons and text.
-- Border-radius: `6px` for cards/buttons, `8–12px` for panels, `10–12px` for mockup frames.
-- Responsive breakpoints: `960px` (tablet) and `600px` / `480px` (mobile).
+- **Midnight Visual Formula:** The site uses a specific color hierarchy: Void/Midnight (`#05070B` to `#0C111A`) for environments, Starlight (White) for text/hierarchy, Moonlight (`#9AAFD3`) for primary atmospheric glows, and Night-Violet (`#8D8AB6`) for secondary depth.
+- **Component Isolation:** Each component owns its own `.css` file imported directly into its `.jsx` — no cross-component style imports.
+- **Motion:** Hover transforms use `translateY(-1px)` or `translateY(-2px)` maximum — never jarring.
+- **Opacity Layers:** Accents are applied at `0.07—0.12` opacity for ambient glows (e.g., `moonlight-glow`), `0.3` for borders, full strength for icons.
+- **Border-radius:** `6px` for cards/buttons, `8—12px` for panels, `12px` for mockup frames.
+- **Responsive Breakpoints:** `960px` (tablet) and `600px` / `480px` (mobile).
 
 ---
 

@@ -20,7 +20,7 @@ This repository is the **marketing website** — a React + Vite single-page app 
 | Layer | Tech |
 |---|---|
 | Frontend | React 19 + Vite |
-| Styling | Pure CSS with custom design tokens |
+| Styling | Pure CSS (Custom Midnight Theme) |
 | Icons | Lucide React |
 | Fonts | Playfair Display · JetBrains Mono · Inter |
 | Backend API | `flowstate-api` (separate repo) — Express + Node + MongoDB |
@@ -141,8 +141,9 @@ The Download button calls:
 ```
 GET https://your-api.onrender.com/api/downloads/windows
 ```
-The API increments the MongoDB download counter, then redirects the user to the `.exe` installer.  
-The live download count widget calls `GET /api/stats` and silently hides itself if the API is offline.
+The API increments the MongoDB download counter, then redirects the user to the `.exe` installer. If the API is missing a database connection locally, it will provide dummy data to prevent errors.
+
+The live download count widget calls `GET /api/stats` to aggregate the total downloads. It silently hides itself gracefully if the API goes offline, ensuring the marketing site never looks broken.
 
 User productivity data (tasks, habits, notes) **never** touches this website or API — it stays entirely on the user's device inside the desktop app.
 
