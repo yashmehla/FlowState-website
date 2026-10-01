@@ -81,13 +81,18 @@ export default function Hero() {
             style={{ 
               transform: `perspective(1000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) translateY(${rotation.x * 2}px)`
             }}
-            aria-hidden="true"
           >
             <div className="hero__mockup-chrome">
               <div className="chrome-dots">
                 <span className="chrome-dot red" />
                 <span className="chrome-dot yellow" />
                 <span className="chrome-dot green" />
+              </div>
+              <div className="hero__mockup-chrome-title font-mono">
+                FlowState — Local Workspace
+              </div>
+              <div className="hero__mockup-chrome-badge font-mono">
+                <span className="chrome-badge-dot" /> LIVE DEMO
               </div>
             </div>
             <div className="hero__mockup-content">
